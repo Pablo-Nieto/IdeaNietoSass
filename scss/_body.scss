@@ -1,0 +1,113 @@
+//var
+
+$negro:#000000;
+$color:#ffba26;
+$crema:#ffeeca;
+$amarillo:#FFE349;
+$bordo:#C70039;
+
+/*modificaciones generales*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	background-color: $color;
+	position: sticky;
+	top: 0;
+}
+
+.logo {
+	width: 110px; 
+	height: 110px;
+	margin: 20px;
+
+}
+
+.logoIndex {
+	width: 110px; 
+	height: 110px;
+}
+
+.barraNav {
+	font-size: 25px;
+	color: $negro;
+	position: relative;
+	text-align: right;
+	top: -110px;
+	list-style: none;
+}
+
+.barraNavIndex {
+	font-size: 25px;
+	color: $negro;
+	position: relative;
+	text-align: right;
+	top: -65px;
+	list-style: none;
+}
+
+.li {
+	display: inline-block;
+	padding: 20px;
+	a {
+		color: $negro;
+	&:hover {
+		color: $bordo;
+		}
+	}
+}
+
+header .navegacion__menu--activo {
+	color: $bordo;
+}
+
+.contenido {
+	background-color: $crema;
+	margin-bottom: 0px; 
+	padding-top: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+img {
+	margin: 30px;
+}
+
+footer {
+	background-color: $amarillo;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer__table {
+	margin-left: 30px;
+	margin-top: 80px;
+	font-size: 17px;
+}
+
+.footer__logos {
+	margin-top: 65px;
+}
+
+.footer__maps {
+	margin-top: 30px;
+	margin-right: 30px;
+	margin-bottom: 200px;
+}

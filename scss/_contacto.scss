@@ -1,0 +1,142 @@
+// var
+
+$grid:grid;
+
+/*grid contacto*/
+
+/*vista desktop*/
+
+@media only screen and (min-width: 769px) {
+	.gridContainerPadreContacto {
+		display: grid;
+		grid-template-areas: 
+		"header header header header"
+		"main main main main"
+		"footer footer footer footer";
+		grid-template-columns: repeat(4, 25%);
+		grid-template-rows: 166px 800px 272px;
+	}
+
+	header {
+		grid-area: header;
+	}
+
+	main {
+		grid-area: main;
+	}
+
+	footer {
+		grid-area: footer;
+	}
+}
+
+.titulo{
+	margin-left: 98px;
+	margin-bottom: 50px;
+	font-size: 55px;
+	border-bottom-style: solid;
+	width: 90%;
+}
+
+.form {
+	font-size: 23px;
+}
+
+.formulario {
+	margin-left: 100px;
+}
+
+.formulario__text{
+	width: 1150px;
+	margin-bottom:30px;
+}
+
+.formulario__email {
+	width: 1150px;
+	margin-bottom:30px;
+}
+
+.formulario__checkbox__si {
+	margin-left: 60px;
+	margin-bottom: 30px;
+}
+
+.formulario__checkbox__no {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.formulario__textarea {
+	margin-top: 15px;
+	margin-bottom: 30px;
+	width: 600px;
+	height: 150px;
+}
+
+.formulario__reset {
+	margin-left: 30px;
+}
+
+/*vista mobile*/
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+	.gridContainerPadreContacto {
+		display: grid;
+		grid-template-areas:
+		"header"
+		"main"
+		"footer";
+		grid-template-columns: 100%; 
+		grid-template-rows: 240px 766px 620px; 
+	}
+
+	header {
+		grid-area: header;
+	}
+
+	main {
+		grid-area: main;
+	}
+
+	footer {
+		grid-area: footer;
+	}
+
+	.titulo {
+		width: 57%;
+		margin-left: 90px;
+	}
+
+	.barraNav {
+		top: -57px;
+		left:20px;
+	}
+
+	.formulario {
+		margin-left: 30px;
+	}
+
+	.formulario__text {
+		width: 329px;
+	}
+
+	.formulario__email {
+		width: 329px;
+	}
+
+	.formulario__textarea {
+		width: 333px;
+	}
+
+	.footer__table {
+		margin-left: 65px;
+	}
+
+	.footer__logos {
+		padding-left: 40px;
+	}
+
+	.footer__maps {
+		padding-left: 55px;
+	}
+}
