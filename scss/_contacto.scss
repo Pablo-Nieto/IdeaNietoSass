@@ -46,13 +46,19 @@ $grid:grid;
 	margin-left: 100px;
 }
 
+.contacto {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
 .formulario__text{
-	width: 1150px;
+	width: 600px;
 	margin-bottom:30px;
 }
 
 .formulario__email {
-	width: 1150px;
+	width: 600px;
 	margin-bottom:30px;
 }
 
@@ -73,8 +79,23 @@ $grid:grid;
 	height: 150px;
 }
 
-.formulario__reset {
+.boton {
+	padding: 3px;
+}
+
+.boton--reset {
+	@extend .boton;
 	margin-left: 30px;
+}
+
+.boton--submit {
+	@extend .boton;
+	margin-bottom: 34px;
+}
+
+.img__contacto {
+	margin-top: -13px;
+	margin-left: 173px;
 }
 
 /*vista mobile*/
@@ -87,7 +108,7 @@ $grid:grid;
 		"main"
 		"footer";
 		grid-template-columns: 100%; 
-		grid-template-rows: 240px 766px 620px; 
+		grid-template-rows: 240px 1275px 620px; 
 	}
 
 	header {
@@ -108,13 +129,23 @@ $grid:grid;
 	}
 
 	.barraNav {
-		top: -57px;
+		top: -26px;
 		left:20px;
+	}
+
+	.li{
+		padding: 0px 0px 0px 20px;
 	}
 
 	.formulario {
 		margin-left: 30px;
 	}
+
+	.contacto {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}	
 
 	.formulario__text {
 		width: 329px;
@@ -126,6 +157,12 @@ $grid:grid;
 
 	.formulario__textarea {
 		width: 333px;
+	}
+
+	.img__contacto {
+		width: 70%;
+		margin-top: 20px;
+		margin-left: 59px;
 	}
 
 	.footer__table {
